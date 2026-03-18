@@ -11,7 +11,7 @@ Este módulo contiene las pruebas automatizadas para el proyecto **[Reservas Sof
 - **AssertJ**
 
 ## Estructura del Proyecto
-- `src/main/java/com.reservassofka`: Contiene los Page Objects, los componentes de Interfaz de Usuario (UI) y las tareas para interactuar con la aplicación.
+- `src/main/java/`: Contiene los Page Objects, los componentes de Interfaz de Usuario (UI) y las tareas para interactuar con la aplicación.
 - `src/test/java/com.reservassofka`: Contiene las definiciones de los pasos (Step Definitions) de Cucumber y los ejecutores de prueba (Test Runners).
 - `src/test/resources/features`: Contiene los archivos con sintaxis Gherkin (`.feature`) donde se definen los escenarios de prueba.
 - `serenity.properties`: Archivo de configuración para Serenity BDD (ej. ajustes del WebDriver, URLs base, tiempos de espera, credenciales).
@@ -33,6 +33,15 @@ El proyecto de automatización cubre diferentes escenarios de uso de la aplicaci
 - **Flujo Negativo:** `Error when updating a reservation with invalid start time`
   - *Descripción:* Valida que el sistema verifique la coherencia de los horarios, probando el escenario en el que un usuario intenta guardar una reserva donde la hora de inicio es igual o posterior a la hora de fin.
   - *Resultado Esperado:* El sistema restringe la acción de guardado y arroja el mensaje de validación: *"La hora de inicio debe ser menor que la hora de fin"*.
+
+## ⚠️ Condiciones Requeridas para una Ejecución Exitosa
+
+Al igual que en otros módulos de pruebas e2e, el entorno local debe estar debidamente preparado para que los escenarios se ejecuten de manera confiable:
+
+1. **Disponibilidad de Datos (Reservas Existentes)**: Dado que los escenarios de este módulo prueban la **actualización** de una reserva existente, la base de datos local debe contar previamente con al menos una reserva a nombre del usuario (`admin@sofka.com.co`). Si el usuario no tiene ninguna reserva próxima, el test de actualización fallará al no encontrar elementos en la lista "Mis Reservas".
+2. **Frontend en Ejecución**: El servidor local de React (Vite) debe estar levantado (`npm run dev`) para que la aplicación responda a la URL configurada en el proyecto base (`http://localhost:5173`).
+3. **Backend e Infraestructura**: Los servicios backend (APIs y bases de datos) deben estar funcionando correctamente para procesar la autenticación del empleado y cargar los datos de las reservas.
+4. **Navegador Embebido (Chrome)**: Debe tener Google Chrome instalado. Se recomienda dejar que el navegador corra la prueba visualmente sin interactuar con él para no interrumpir el foco de los selectores POM.
 
 ## Ejecución
 
