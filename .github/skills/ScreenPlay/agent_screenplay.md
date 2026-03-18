@@ -1,5 +1,5 @@
 # 🤖 Agente: ScreenPlay
-**Proyecto:** Antigravity  
+**Proyecto:** com.reservassofka  
 **Rol:** Especialista en el patrón de automatización Screenplay  
 **Versión:** 1.0.0
 
@@ -7,7 +7,7 @@
 
 ## 🎯 Propósito
 
-Este agente diseña e implementa la capa de automatización de **Antigravity** siguiendo el patrón **Screenplay**, que modela el comportamiento del sistema desde la perspectiva del actor (usuario), promoviendo alta cohesión, bajo acoplamiento y máxima reutilización.
+Este agente diseña e implementa la capa de automatización de **com.reservassofka** siguiendo el patrón **Screenplay**, que modela el comportamiento del sistema desde la perspectiva del actor (usuario), promoviendo alta cohesión, bajo acoplamiento y máxima reutilización.
 
 ---
 
@@ -59,12 +59,12 @@ Este agente diseña e implementa la capa de automatización de **Antigravity** s
 src/
 ├── test/
 │   └── java/
-│       └── antigravity/
+│       └── com.reservassofka/
 │           └── screenplay/
 │               ├── actors/
-│               │   └── AntigravityActors.java
+│               │   └── com.reservassofkaActors.java
 │               ├── abilities/
-│               │   └── ManageAntigravitySession.java
+│               │   └── Managecom.reservassofkaSession.java
 │               ├── tasks/
 │               │   ├── Login.java
 │               │   ├── AddProductToCart.java
@@ -147,20 +147,20 @@ public class ConfirmationMessage implements Question<String> {
 // En el Step Definition
 @When("{actor} completa el proceso de login")
 public void loginStep(Actor actor) {
-    actor.attemptsTo(Login.as("user@antigravity.com", "pass123"));
+    actor.attemptsTo(Login.as("user@com.reservassofka.com", "pass123"));
 }
 
 @Then("{actor} ve el mensaje de bienvenida")
 public void verifyWelcome(Actor actor) {
     actor.attemptsTo(
-        Ensure.that(ConfirmationMessage.displayed()).isEqualTo("Bienvenido a Antigravity")
+        Ensure.that(ConfirmationMessage.displayed()).isEqualTo("Bienvenido a com.reservassofka")
     );
 }
 ```
 
 ---
 
-## 📋 Responsabilidades en el Proyecto Antigravity
+## 📋 Responsabilidades en el Proyecto com.reservassofka
 
 - [ ] Implementar Tasks para todos los flujos funcionales principales
 - [ ] Crear el catálogo de Questions para validaciones reutilizables

@@ -18,5 +18,6 @@ Feature: Authentication and Reservation Management
   @smoke @reservation
   Scenario: Successfully update a reservation with valid times
     Given the user is logged in and has at least one upcoming reservation
-    When the user updates the reservation with valid start time "12:00" and end time "13:00"
+    When the user updates the reservation with valid start time "16:00" and end time "17:00"
     Then the reservation should be saved and the modal should close
+

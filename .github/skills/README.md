@@ -1,6 +1,6 @@
-# 🧠 Agentes de Automatización — Antigravity
+# 🧠 Agentes de Automatización — com.reservassofka
 
-Bienvenido al directorio de skills del proyecto **Antigravity**. Esta carpeta contiene la definición de los agentes especializados que conforman el ecosistema de automatización de calidad del proyecto.
+Bienvenido al directorio de skills del proyecto **com.reservassofka**. Esta carpeta contiene la definición de los agentes especializados que conforman el ecosistema de automatización de calidad del proyecto.
 
 ---
 
@@ -163,4 +163,4 @@ Para que una rama pueda ser promovida a producción, debe cumplir:
 
 ---
 
-*Última actualización: v1.0.0 — Proyecto Antigravity*
+*Última actualización: v1.0.0 — Proyecto com.reservassofka*

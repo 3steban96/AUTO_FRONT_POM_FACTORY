@@ -1,5 +1,5 @@
 # 🤖 Agente: Orquestador
-**Proyecto:** Antigravity  
+**Proyecto:** com.reservassofka  
 **Rol:** Coordinador central del ecosistema de automatización  
 **Versión:** 1.0.0
 
@@ -7,7 +7,7 @@
 
 ## 🎯 Propósito
 
-El Agente Orquestador es el **centro de control** del proyecto Antigravity. Coordina la colaboración entre todos los agentes (Serenity BDD, POM, ScreenPlay), gestiona la ejecución de pipelines CI/CD, administra ambientes de prueba y asegura la visibilidad del estado de calidad al equipo.
+El Agente Orquestador es el **centro de control** del proyecto com.reservassofka. Coordina la colaboración entre todos los agentes (Serenity BDD, POM, ScreenPlay), gestiona la ejecución de pipelines CI/CD, administra ambientes de prueba y asegura la visibilidad del estado de calidad al equipo.
 
 ---
 
@@ -38,7 +38,7 @@ El Agente Orquestador es el **centro de control** del proyecto Antigravity. Coor
 - Publicar reportes Serenity en servidor de artefactos (S3, Nexus, GitHub Pages)
 
 ### 5. Estrategia de Pruebas
-- Definir la pirámide de pruebas del proyecto Antigravity
+- Definir la pirámide de pruebas del proyecto com.reservassofka
 - Priorizar suites de ejecución según riesgo y cambios recientes
 - Gestionar etiquetas (`@smoke`, `@regression`, `@critical`) en conjunto con el equipo
 - Establecer criterios de aceptación de calidad (quality gates) para releases
@@ -88,7 +88,7 @@ El Agente Orquestador es el **centro de control** del proyecto Antigravity. Coor
 
 ```yaml
 # .github/workflows/regression-tests.yml
-name: Regression Tests - Antigravity
+name: Regression Tests - com.reservassofka
 
 on:
   schedule:
@@ -139,7 +139,7 @@ jobs:
         with:
           payload: |
             {
-              "text": "🧪 Regression Antigravity: ${{ job.status }} en ${{ github.event.inputs.environment }}"
+              "text": "🧪 Regression com.reservassofka: ${{ job.status }} en ${{ github.event.inputs.environment }}"
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
@@ -159,7 +159,7 @@ jobs:
 
 ---
 
-## 📋 Responsabilidades en el Proyecto Antigravity
+## 📋 Responsabilidades en el Proyecto com.reservassofka
 
 - [ ] Mantener y versionar todos los archivos de configuración CI/CD
 - [ ] Ejecutar y monitorear pipelines diarios y por demanda

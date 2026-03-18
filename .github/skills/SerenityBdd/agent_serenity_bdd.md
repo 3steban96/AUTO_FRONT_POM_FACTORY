@@ -1,5 +1,5 @@
 # 🤖 Agente: Serenity BDD
-**Proyecto:** Antigravity  
+**Proyecto:** com.reservassofka  
 **Rol:** Especialista en automatización con Serenity BDD  
 **Versión:** 1.0.0
 
@@ -16,7 +16,7 @@ Este agente es responsable de diseñar, implementar y mantener pruebas automatiz
 ### 1. Escritura de Escenarios en Gherkin
 - Redactar feature files con sintaxis **Given / When / Then**
 - Definir escenarios claros, reutilizables y alineados con criterios de aceptación
-- Organizar features por módulo o épica del proyecto Antigravity
+- Organizar features por módulo o épica del proyecto com.reservassofka
 
 ### 2. Implementación de Step Definitions
 - Mapear pasos Gherkin a métodos Java/Kotlin con anotaciones `@Given`, `@When`, `@Then`
@@ -59,7 +59,7 @@ Este agente es responsable de diseñar, implementar y mantener pruebas automatiz
 src/
 ├── test/
 │   ├── java/
-│   │   └── antigravity/
+│   │   └── com.reservassofka/
 │   │       ├── runners/
 │   │       │   └── CucumberTestRunner.java
 │   │       └── stepdefinitions/
@@ -76,7 +76,7 @@ src/
 
 ---
 
-## 📋 Responsabilidades en el Proyecto Antigravity
+## 📋 Responsabilidades en el Proyecto com.reservassofka
 
 - [ ] Crear y mantener el repositorio de feature files
 - [ ] Asegurar cobertura BDD del 80% en módulos críticos

@@ -1,4 +1,4 @@
-package antigravity.ui.pages;
+package com.reservassofka.ui.pages;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -87,3 +87,4 @@ public class LoginPage {
         clickLogin();
     }
 }
+

@@ -1,4 +1,4 @@
-package antigravity.ui.components;
+package com.reservassofka.ui.components;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -112,3 +112,4 @@ public class UpdateReservationModal {
         }
     }
 }
+

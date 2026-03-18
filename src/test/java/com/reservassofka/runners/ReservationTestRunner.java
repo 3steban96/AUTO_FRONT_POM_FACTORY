@@ -1,4 +1,4 @@
-package antigravity.runners;
+package com.reservassofka.runners;
 
 import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
@@ -8,8 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"pretty"},
         features = "src/test/resources/features",
-        glue = "antigravity.stepdefinitions",
+        glue = "com.reservassofka.stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
 public class ReservationTestRunner {
 }
+

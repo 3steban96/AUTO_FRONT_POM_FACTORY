@@ -3,7 +3,7 @@ plugins {
     id 'net.serenity-bdd.serenity-gradle-plugin' version '4.0.12'
 }
 
-group = 'antigravity'
+group = 'com.reservassofka'
 version = '1.0-SNAPSHOT'
 
 repositories {

@@ -1,8 +1,8 @@
-package antigravity.stepdefinitions;
+package com.reservassofka.stepdefinitions;
 
-import antigravity.ui.components.UpdateReservationModal;
-import antigravity.ui.pages.LoginPage;
-import antigravity.ui.pages.MyReservationsPage;
+import com.reservassofka.ui.components.UpdateReservationModal;
+import com.reservassofka.ui.pages.LoginPage;
+import com.reservassofka.ui.pages.MyReservationsPage;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -164,3 +164,4 @@ public class ReservationSteps {
                 .isTrue();
     }
 }
+

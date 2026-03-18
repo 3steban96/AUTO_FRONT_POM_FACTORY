@@ -1,5 +1,5 @@
 # 🤖 Agente: POM (Page Object Model)
-**Proyecto:** Antigravity  
+**Proyecto:** com.reservassofka  
 **Rol:** Especialista en diseño y mantenimiento de Page Objects  
 **Versión:** 1.0.0
 
@@ -7,7 +7,7 @@
 
 ## 🎯 Propósito
 
-Este agente es responsable de modelar cada pantalla o componente de la aplicación **Antigravity** como un objeto Java reutilizable, desacoplando la lógica de navegación/interacción UI de los escenarios de prueba, siguiendo el patrón **Page Object Model**.
+Este agente es responsable de modelar cada pantalla o componente de la aplicación **com.reservassofka** como un objeto Java reutilizable, desacoplando la lógica de navegación/interacción UI de los escenarios de prueba, siguiendo el patrón **Page Object Model**.
 
 ---
 
@@ -60,7 +60,7 @@ Este agente es responsable de modelar cada pantalla o componente de la aplicaci�
 src/
 ├── main/
 │   └── java/
-│       └── antigravity/
+│       └── com.reservassofka/
 │           └── ui/
 │               ├── pages/
 │               │   ├── BasePage.java
@@ -80,7 +80,7 @@ src/
 
 ```java
 // LoginPage.java
-package antigravity.ui.pages;
+package com.reservassofka.ui.pages;
 
 import net.serenitybdd.core.pages.PageObject;
 import org.openqa.selenium.support.FindBy;
@@ -119,7 +119,7 @@ public class LoginPage extends PageObject {
 
 ---
 
-## 📋 Responsabilidades en el Proyecto Antigravity
+## 📋 Responsabilidades en el Proyecto com.reservassofka
 
 - [ ] Mapear el 100% de las pantallas del flujo principal en Page Objects
 - [ ] Mantener actualizado el catálogo de locators ante cambios de UI
@@ -153,8 +153,8 @@ public class LoginPage extends PageObject {
 
 ```java
 // ✅ CORRECTO: método de alto nivel
-loginPage.loginAs("admin@antigravity.com", "secure123");
+loginPage.loginAs("admin@com.reservassofka.com", "secure123");
 
 // ❌ INCORRECTO: exponer detalles de Selenium
-loginPage.getUsernameField().sendKeys("admin@antigravity.com");
+loginPage.getUsernameField().sendKeys("admin@com.reservassofka.com");
 ```
