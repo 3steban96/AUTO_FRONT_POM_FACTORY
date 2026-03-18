@@ -1,0 +1,22 @@
+# Build and IDE files
+target/
+build/
+.gradle/
+bin/
+out/
+.idea/
+*.iml
+.settings/
+.project/
+.classpath/
+serenity.log
+
+# Serenity BDD Report Exception
+# Un-ignore the path to index.html
+!target/
+target/*
+!target/site/
+target/site/*
+!target/site/serenity/
+target/site/serenity/*
+!target/site/serenity/index.html
