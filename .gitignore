@@ -1,22 +1,28 @@
-# Build and IDE files
-target/
-build/
-.gradle/
-bin/
-out/
+# IDE
 .idea/
 *.iml
-.settings/
-.project/
-.classpath/
-serenity.log
+.vscode/
+*.iws
+*.ipr
 
-# Serenity BDD Report Exception
-# Un-ignore the path to index.html
-!target/
-target/*
-!target/site/
-target/site/*
-!target/site/serenity/
-target/site/serenity/*
-!target/site/serenity/index.html
+# OS
+.DS_Store
+Thumbs.db
+
+# Gradle
+.gradle/
+build/
+
+# Maven / Serenity reports (generados)
+target/
+
+# Salida de compilación de IDEs
+bin/
+out/
+
+# Logs
+*.log
+output.log
+
+# Historial de ejecuciones Serenity (generado)
+history/
